@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+*.egg
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+.pnp.*
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Data / uploads
+data/
+*.pdf
+!PRD*.md
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Docker volumes (local)
+pgdata/
+uploads/
+
+# Vercel
+.vercel/

@@ -1,0 +1,10 @@
+backend/.venv/
+data/
+*.pdf
+node_modules/
+frontend/node_modules/
+__pycache__/
+.env
+pgdata/
+uploads/
+PRD(4).md

@@ -3,14 +3,8 @@ Export engine: flatten highlights + drawings onto PDF, append summary page + dia
 Also handles Markdown and DOCX formats.
 """
 from __future__ import annotations
-import json
 from pathlib import Path
 import fitz  # PyMuPDF
-from reportlab.pdfgen import canvas as rl_canvas
-from reportlab.lib.pagesizes import letter
-from reportlab.lib import colors
-import io
-import markdown as md_lib
 
 from app.models.document import Document, Section
 from app.models.annotation import Highlight, Drawing

@@ -6,10 +6,9 @@ import type { ChatMessage } from "../../types";
 
 interface Props {
   docId: string;
-  onPageJump?: (page: number) => void;
 }
 
-export function ChatPanel({ docId, onPageJump }: Props) {
+export function ChatPanel({ docId }: Props) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -63,7 +62,7 @@ export function ChatPanel({ docId, onPageJump }: Props) {
           </div>
         )}
         {messages.map((m) => (
-          <ChatMessageBubble key={m.id} message={m} onCitationClick={onPageJump} />
+          <ChatMessageBubble key={m.id} message={m} />
         ))}
         {loading && (
           <div className="flex items-center gap-2 text-gray-400 text-sm">
